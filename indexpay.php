@@ -40,7 +40,7 @@
     <!-- *************************main de page*******************************     -->
                 <div class="d-flex justify-content-between mt-3   ">
                     <div >
-                        <a href="indexstudent.php " class="fs-3 fw-bold me-3">Students List</a>
+                        <a href="indexstudent.php " class="fs-3 fw-bold me-3">Payment  List</a>
                     </div>
                     <div class="d-flex justify-content-between align-items-center gap-3">
                         <i class="bi bi-chevron-expand fs-4 fw-bold" style="color:#00C1FE;"></i>
@@ -48,78 +48,73 @@
                     </div>
                 </div>
                 <div class="table-responsive-md">
-                  <table class="table table-hover mt-4 ">
-                    <thead>
-                        <tr class="bg-light mt-3" style="color: #ACACAC;  height: 79px;">
-                            <th scope="col" class="align-middle"></th>
-                            <th scope="col" class="align-middle" >Name</th>
-                            <th scope="col " class="align-middle">Payment Schedule</th>
-                            <th scope="col" class="align-middle">Bill Number</th>
-                            <th scope="col" class="align-middle">Amount Paid</th>
-                            <th scope="col" class="align-middle">Balance amount</th>
-                            <th scope="col" class="align-middle">Date </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mt-4 bg-white">
-                            <th scope="row">
-                                <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-                            </th>
-                            <td class="align-middle">Karthi</td>
-                            <td class="align-middle">First</td>
-                            <td class="align-middle">00012223</td>
-                            <td class="align-middle">DHS 100,000</td>
-                            <td class="align-middle">DHS 500,000</td>
-                            <td class="align-middle">05-Jan, 2022</td>
-                            <td class="text-primary align-middle">
-                                <i class="far fa-eye text-info"></i>
-                            </td>
-                        </tr>
-                        <tr class="mt-4 bg-light">
-                            <th scope="row">
-                            <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-                            </th>
-                            <td class="align-middle">Karthi</td>
-                            <td class="align-middle">First</td>
-                            <td class="align-middle">00012223</td>
-                            <td class="align-middle">DHS 100,000</td>
-                            <td class="align-middle">DHS 500,000</td>
-                            <td class="align-middle">05-Jan, 2022</td>
-                            <td class="text-primary align-middle">
-                            <i class="far fa-eye text-info"></i>
-                            </td>
-                            </tr>
-                            <tr class="mt-4 bg-white">
-                                <th scope="row">
-                                <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-                                </th>
-                                <td class="align-middle">Karthi</td>
-                                <td class="align-middle">First</td>
-                                <td class="align-middle">00012223</td>
-                                <td class="align-middle">DHS 100,000</td>
-                                <td class="align-middle">DHS 500,000</td>
-                                <td class="align-middle">05-Jan, 2022</td>
-                                <td class="text-primary align-middle">
-                                <i class="far fa-eye text-info"></i>
-                                </td>
-                                </tr>
-                                <tr class="mt-4 bg-light">
-                                    <th scope="row">
-                                        <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-                                    </th>
-                                    <td class="align-middle">Karthi</td>
-                                    <td class="align-middle">First</td>
-                                    <td class="align-middle">00012223</td>
-                                    <td class="align-middle">DHS 100,000</td>
-                                    <td class="align-middle">DHS 500,000</td>
-                                    <td class="align-middle">05-Jan, 2022</td>
-                                    <td class="text-primary align-middle">
-                                        <i class="far fa-eye text-info"></i>
-                                    </td>
-                                </tr>
+                <table class="table table-hover mt-4 ">
+			<?php 
+    //tableau assausitif
+                $payment=array(
+                    array (
+                        'Name'=>'Karthi',
+                        'Payment Schedule'=>'First',
+                        'Bill Number'=>00012223,
+                        'Amount Paid'=>'DHS 100,000',
+                        'Balance amount'=>'DHS 500,000',
+                        'Date'=>'05-Jan, 2022 ',
+                        ),
+                    array (
+                        'Name'=>'Karthi',
+                        'Payment Schedule'=>'First',
+                        'Bill Number'=>00012223,
+                        'Amount Paid'=>'DHS 100,000',
+                        'Balance amount'=>'DHS 500,000',
+                        'Date'=>'05-Jan, 2022 ',
+                        ), 
+                    array (
+                        'Name'=>'Karthi',
+                        'Payment Schedule'=>'First',
+                        'Bill Number'=>00012223,
+                        'Amount Paid'=>'DHS 100,000',
+                        'Balance amount'=>'DHS 500,000',
+                        'Date'=>'05-Jan, 2022 ',
+                        ), 
+                    array (
+                        'Name'=>'Karthi',
+                        'Payment Schedule'=>'First',
+                        'Bill Number'=>00012223,
+                        'Amount Paid'=>'DHS 100,000',
+                        'Balance amount'=>'DHS 500,000',
+                        'Date'=>'05-Jan, 2022 ',
+                        ), 
+                    );
+
+                ?>
+                    <br>
+                <table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
+                    <tr class="bg-light">
+                        <td>Name</td>
+                        <td>Payment Schedule</td>
+                        <td>Bill Number</td>
+                        <td>Amount Paid</td>
+                        <td>Balance amount</td>
+                        <td>Date</td>
+                    </tr>
+                    <tbody style="height: 352px; text-align:center">
+                    <?php 
+                            foreach ($payment as $key => $p) {
+                    ?>
+                        <tr style=" border-bottom-width: 11px;" >
+                        <td><?php echo$p['Name'];?> </td>
+                        <td><?php echo$p['Payment Schedule']; ?></td>
+                        <td><?php echo$p['Bill Number']; ?></td>
+                        <td><?php echo$p['Amount Paid']; ?></td>
+                        <td><?php echo$p['Balance amount']; ?></td>
+                        <td><?php echo$p['Date']; ?></td>
+                    </tr>
+                    <?php } ?>
                     </tbody>
-                </div>
+
                 </table>
+                    </table>
+
 
             </div>
         </div>
@@ -130,85 +125,3 @@
 </body>
 
 </html>
-<!-- **
-             <table class="table-responsive table-responsive-md table table-hover" style="border-top: 2px solid gray;">
-                            <thead>
-                                <tr class="bg-light mt-3" style="color: #ACACAC;  height: 79px;">
-                                    <th scope="col" class="align-middle"></th>
-                                    <th scope="col" class="align-middle" >Name</th>
-                                    <th scope="col " class="align-middle">Payment Schedule</th>
-                                    <th scope="col" class="align-middle">Bill Number</th>
-                                    <th scope="col" class="align-middle">Amount Paid</th>
-                                    <th scope="col" class="align-middle">Balance amount</th>
-                                    <th scope="col" class="align-middle">Date </th>
-                                </tr>
-                            </thead>
-                            <tbody class="flex-column gap-2 " style=" height: 594px; ">
-<!-- ***********************************row1**************************************
-<tr class="mt-4 bg-white">
-    <th scope="row">
-        <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-    </th>
-    <td class="align-middle">Karthi</td>
-    <td class="align-middle">First</td>
-    <td class="align-middle">00012223</td>
-    <td class="align-middle">DHS 100,000</td>
-    <td class="align-middle">DHS 500,000</td>
-    <td class="align-middle">05-Jan, 2022</td>
-    <td class="text-primary align-middle">
-        <i class="far fa-eye text-info"></i>
-    </td>
-</tr>
-<!-- ***********************************row2****************************************
-
-<tr class="mt-4 bg-white">
-<th scope="row">
-<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-</th>
-<td class="align-middle">Karthi</td>
-<td class="align-middle">First</td>
-<td class="align-middle">00012223</td>
-<td class="align-middle">DHS 100,000</td>
-<td class="align-middle">DHS 500,000</td>
-<td class="align-middle">05-Jan, 2022</td>
-<td class="text-primary align-middle">
-<i class="far fa-eye text-info"></i>
-</td>
-</tr>
-<!-- ***********************************row3****************************************
-
-<tr class="mt-4 bg-white">
-<th scope="row">
-<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-</th>
-<td class="align-middle">Karthi</td>
-<td class="align-middle">First</td>
-<td class="align-middle">00012223</td>
-<td class="align-middle">DHS 100,000</td>
-<td class="align-middle">DHS 500,000</td>
-<td class="align-middle">05-Jan, 2022</td>
-<td class="text-primary align-middle">
-<i class="far fa-eye text-info"></i>
-</td>
-</tr>
-<!-- ***********************************row4****************************************
-
- <tr class="mt-4 bg-white">
-    <th scope="row">
-        <img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-    </th>
-    <td class="align-middle">Karthi</td>
-    <td class="align-middle">First</td>
-    <td class="align-middle">00012223</td>
-    <td class="align-middle">DHS 100,000</td>
-    <td class="align-middle">DHS 500,000</td>
-    <td class="align-middle">05-Jan, 2022</td>
-    <td class="text-primary align-middle">
-        <i class="far fa-eye text-info"></i>
-    </td>
-</tr>
-<!-- ***********************************row5***************************************
-</tbody>
-</table>
-    
-    ***** -->

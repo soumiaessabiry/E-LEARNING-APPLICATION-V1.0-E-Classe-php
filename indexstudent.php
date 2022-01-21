@@ -24,7 +24,7 @@
 				 
 				 ?>
                         <!-- ******************************** search******************************************* -->
-					<div class="col " >
+					<div class="col "  >
 						<div class="d-flex justify-content-between mt-3   ">
 							<div class="">
 								<a href="indexdach.php"><i class="far fa-arrow-alt-circle-left text-muted"></i></a>
@@ -52,132 +52,94 @@
 						</div>
 					   <!-- ******************************** table******************************************** -->
 					 <div class="table-responsive-md ">
-						<table class="table table-hover mt-4 ">
-							<thead>
-								<tr class="bg-light mt-5" style="color: #ACACAC;  height: 70px;">
-									<th scope="col"></th>
-									<th scope="col"  class="align-middle">Name</th>
-									<th scope="col" class="align-middle">Email</th>
-									<th scope="col" class="align-middle">Phone</th>
-									<th scope="col" class="align-middle">Enroll number</th>
-									<th scope="col" class="align-middle">Date of admission</th>
-									<th scope="col" class="align-middle"></th>
-								</tr>
-							</thead>
-							<tbody>
-						<!-- ******************************** row1******************************************** -->
-	
-								<tr class="mt-4 bg-white"style=" border-bottom-width: 11px;">
-									<th scope="row">
-										<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-									</th>
-									<td class="align-middle">username</td>
-									<td class="align-middle">user@email.com</td>
-									<td class="align-middle">7305477760</td>
-									<td class="align-middle">1234567305477760</td>
-									<td class="align-middle">08-Dec, 2021</td>
-									<td class="text-primary align-middle">
-										<i class="fas fa-pen pe-3"></i>
-										<i class="fas fa-trash"></i>
-									</td>
-								</tr>
-						<!-- ******************************** row1******************************************** -->
-	
-						  <tr class="mt-4 bg-white;"style=" border-bottom-width: 11px;">
-							<th scope="row">
-								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-							</th>
-							<td class="align-middle">username</td>
-							<td class="align-middle">karthi@gmmail.com</td>
-							<td class="align-middle">7305477760</td>
-							<td class="align-middle">1234567305477760</td>
-							<td class="align-middle">08-Dec, 2021</td>
-							<td class="text-primary align-middle">
-								<i class="fas fa-pen pe-3"></i>
-								<i class="fas fa-trash"></i>
-							</td>
-							<!-- ******************************** row2******************************************** -->
-							</tr>
-								<tr class="mt-4  bg-white " style=" border-bottom-width: 11px;">
-									<th scope="row">
-										<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-									</th>
-									<td class="align-middle">username</td>
-									<td class="align-middle">karthi@gmmail.com</td>
-									<td class="align-middle">7305477760</td>
-									<td class="align-middle">1234567305477760</td>
-									<td class="align-middle">08-Dec, 2021</td>
-									<td class="text-primary align-middle">
-										<i class="fas fa-pen pe-3"></i>
-										<i class="fas fa-trash"></i>
-									</td>
-								</tr>
-							<!-- ******************************** row3******************************************** -->
-	 
-								<tr class="mt-4  bg-white "style=" border-bottom-width: 11px;">
-									<th scope="row">
-										<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-									</th>
-									<td class="align-middle">username</td>
-									<td class="align-middle">karthi@gmmail.com</td>
-									<td class="align-middle">7305477760</td>
-									<td class="align-middle">1234567305477760</td>
-									<td class="align-middle">08-Dec, 2021</td>
-									<td class="text-primary align-middle">
-										<i class="fas fa-pen pe-3"></i>
-										<i class="fas fa-trash"></i>
-									</td>
-								</tr>
-							<!-- ******************************** row4******************************************** -->
-	
-						<tr class="mt-4  bg-white" style=" border-bottom-width: 11px;">
-							<th scope="row">
-								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-							</th>
-							<td class="align-middle">username</td>
-							<td class="align-middle">karthi@gmmail.com</td>
-							<td class="align-middle">7305477760</td>
-							<td class="align-middle">1234567305477760</td>
-							<td class="align-middle">08-Dec, 2021</td>
-							<td class="text-primary align-middle">
-								<i class="fas fa-pen pe-3"></i>
-								<i class="fas fa-trash"></i>
-							</td>
+					<table class="table table-hover mt-4 ">
+				<?php 
+					$student=array(
+						array (
+							'Name'=>'username',
+							'Email'=>'user@email.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							),
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						
+						array (
+							'Name'=>'username',
+							'Email'=>'karthi@gmmail.com',
+							'Phone'=>7305477760,
+							'Enroll number'=>1234567305477760,
+							'Date of admission'=>'08-Dec, 2021',
+							), 
+						);
+
+					?>
+						<br>
+					<table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
+						<tr class="bg-light">
+							<td>Name</td>
+							<td>Email</td>
+							<td> Phone</td>
+							<td>Enroll number</td>
+							<td>Date of admission</td>
 						</tr>
-						<!-- ******************************** row5******************************************** -->
-	
-						<tr class="mt-4  bg-white"style=" border-bottom-width: 11px;">
-							<th scope="row">
-								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-							</th>
-							<td class="align-middle">username</td>
-							<td class="align-middle">karthi@gmmail.com</td>
-							<td class="align-middle">7305477760</td>
-							<td class="align-middle">1234567305477760</td>
-							<td class="align-middle">08-Dec, 2021</td>
-							<td class="text-primary align-middle">
-								<i class="fas fa-pen pe-3"></i>
-								<i class="fas fa-trash"></i>
-							</td>
+						<tbody style="height: 352px; text-align:center">
+						<?php 
+								foreach ($student as $key => $p) {
+						?>
+							<tr style=" border-bottom-width: 11px;" >
+							<td><?php echo$p['Name'];?> </td>
+							<td><?php echo$p['Email']; ?></td>
+							<td><?php echo$p['Phone']; ?></td>
+							<td><?php echo$p['Enroll number']; ?></td>
+							<td><?php echo$p['Date of admission']; ?></td>
 						</tr>
-						<!-- ******************************** row6******************************************** -->
-	
-						<tr class="mt-4  bg-white " style=" border-bottom-width: 11px;">
-							<th scope="row">
-								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-							</th>
-							<td class="align-middle">username</td>
-							<td class="align-middle">karthi@gmmail.com</td>
-							<td class="align-middle">7305477760</td>
-							<td class="align-middle">1234567305477760</td>
-							<td class="align-middle">08-Dec, 2021</td>
-							<td class="text-primary align-middle">
-								<i class="fas fa-pen pe-3"></i>
-								<i class="fas fa-trash"></i>
-							</td>
-						</tr>
-							</tbody>
-						  </table>
+						<?php } ?>
+						</tbody>
+
+					</table>
+						</table>
 							
 					  </div>
 					</div>	
