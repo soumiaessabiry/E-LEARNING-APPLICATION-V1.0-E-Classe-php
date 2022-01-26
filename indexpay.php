@@ -73,7 +73,7 @@
 
                         ?>
                     
-                       <table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
+                       <table  width="100%" style="height: 352px; text-align:center" class="table table-hover bg-light " >
                             <tr class="bg-light">
                                 <td>Name</td>
                                 <td>Payment Schedule</td>

@@ -1,6 +1,6 @@
 
                 <div class="row flex-nowrap" style="height: 100vh;">
-                    <div class="col-auto col-md-auto col-xl-2 px-sm-auto px-0 collapse      " style="background:#FAFFC1 ;"  id="collapseExample">
+                    <div class="col-auto col-md-auto col-xl-2 px-sm-auto px-0 collapse  d-lg-block  d-md-none " style="background:#FAFFC1 ;"  id="collapseExample">
                         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 ">
                          		 <span class=" fs-4 my-2 fs-5 d-none d-sm-inline" style="color: black;"><span class="border-start border-info border-5 ps-2 fw-bolder ms-3 align-text-top  ">E-classe</span> </span>
                                <div class="text-center p-3 ">

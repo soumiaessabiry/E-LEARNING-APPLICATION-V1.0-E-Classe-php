@@ -14,8 +14,8 @@
             <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
             <script src="styleboot/js/bootstrap.min.js"></script>
+			
         </head>
-
         <body>
             <div class="container-fluid">
                
@@ -26,11 +26,11 @@
 						<?php include 'navbar.php' ?>
 						<div class="d-flex justify-content-between mt-3   ">
 							<div class="">
-								<a href="indexstudent.php " class="fs-3 fw-bold me-3">Students List</a>
+								<a href="indexstudent.php " class=" phov fs-3 fw-bold me-3">Students List</a>
 							</div>
 							<div class="d-flex justify-content-between align-items-center gap-3">
 								<i class="bi bi-chevron-expand fs-2 fw-bold" style="color:#00C1FE;"></i>
-								<div>
+								<div> 
 								<form class="d-flex">
 									<button type="button" class="btn" style="background:#00C1FE ;">ADD NEW STUDENT</button>									</form>
 								</div>
@@ -101,7 +101,7 @@
 
 							?>
 						
-					   <table  width="100%" style="text-align:center">
+					   <table  width="100%" style="text-align:center "  class="table table-hover">
 						
 						<tbody style="height: 352px; text-align:center">
 						<?php 
