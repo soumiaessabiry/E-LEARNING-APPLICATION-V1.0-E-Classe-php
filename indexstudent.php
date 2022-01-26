@@ -19,10 +19,7 @@
         <body>
             <div class="container-fluid">
                
-					<?php
-					include('sidebar.php');  
-					
-					?>
+					<?php include('sidebar.php'); ?>
 				
                   		<!-- ******************************** search******************************************* -->
 					<div class=" col"  >
@@ -111,6 +108,9 @@
 								foreach ($student as $key => $p) {
 						?>
 							<tr style=" border-bottom-width: 11px;" >
+							<th scope="row">
+								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
+							</th>
 							<td><?php echo $p['Name'];?> </td>
 							<td><?php echo$p['Email']; ?></td>
 							<td><?php echo$p['Phone']; ?></td>
@@ -128,14 +128,10 @@
 							
 					 </div>	
 					</div> 
-				</div> 
-			</div>
-			  
-                
-				</div>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	</div> 
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
         </body>
 		</html>
        

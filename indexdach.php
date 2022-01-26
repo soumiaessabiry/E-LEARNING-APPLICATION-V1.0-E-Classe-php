@@ -18,62 +18,52 @@
 <body>
     <!-- ******************************* col 1******************************** -->
     <div class="container-fluid">
-      <div class="row flex-nowrap">
-         <?php 
-         include('sidebar.php');
-         
-         ?>
-          <div class="col ">
-            <div class="d-flex justify-content-between mt-3">
-                <div >
-                    <a href="index.php"><i class="far fa-arrow-alt-circle-left text-muted"></i></a>
-                </div>
-                <div class="d-flex justify-content-between align-items-center gap-3">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <div>
-                        <a href="#"><i class="far fa-bell text-muted"></i></a>
-                    </div>
-                </div>
-            </div>
-     <!-- ******************************* main de page******************************** -->
+        <div class="row flex-nowrap">
+               <?php include('sidebar.php'); ?> 
+            <div class="col ">
+                  <?php include 'navbar.php' ?>
+                
+              
+                  <!-- ******************************* main de page******************************** -->
 
-            <div class="row  my-3">
-                <div class="row  p-5 " style="position: relative;">
-                    <div class="col-lg-3 col-md-12 pb-3" >
-                        <div class="col p-4"  style="background:#F0F9FF; position: relative; border-radius: 20px;; ">
-                            <i class="bi bi-mortarboard fs-1"  style="color: #74C1ED ;position:relative;background:#F0F9FF ;"></i>
-                           <a href="indexstudent.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Students</p></a> 
-                            <p class="d-flex justify-content-lg-end fw-bolder fs-2">243</p>
-                        </div>
-                    </div>
+                    <div class="row  my-3">
+                        <div class="row  p-5 " style="position: relative;">
+                            <div class="col-lg-3 col-md-12 pb-3" >
+                                <div class="col p-4"  style="background:#F0F9FF; position: relative; border-radius: 20px;; ">
+                                    <i class="bi bi-mortarboard fs-1"  style="color: #74C1ED ;position:relative;background:#F0F9FF ;"></i>
+                                <a href="indexstudent.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Students</p></a> 
+                                    <p class="d-flex justify-content-lg-end fw-bolder fs-2">243</p>
+                                </div>
+                            </div>
 
-                    <div class="col-lg-3 col-md-12 pb-3" >
-                        <div class="col p-4"  style="background:#FEF6FB; position: relative; border-radius: 20px;">
-                            <i class="bi bi-bookmark fs-1"  style="color:#EE95C5 ;position:relative;background:#FEF6FB  30px; " ></i>
-                           <a href="#"> <p class="fw-normal fs-4 " style="color:#6C6C6C;">Course</p></a>
-                            <p class="d-flex justify-content-lg-end fw-bolder fs-2">13</p>
-                        </div>
-                    </div>
+                            <div class="col-lg-3 col-md-12 pb-3" >
+                                <div class="col p-4"  style="background:#FEF6FB; position: relative; border-radius: 20px;">
+                                    <i class="bi bi-bookmark fs-1"  style="color:#EE95C5 ;position:relative;background:#FEF6FB  30px; " ></i>
+                                <a href="#"> <p class="fw-normal fs-4 " style="color:#6C6C6C;">Course</p></a>
+                                    <p class="d-flex justify-content-lg-end fw-bolder fs-2">13</p>
+                                </div>
+                            </div>
 
-                    <div class="col-lg-3 col-md-12 pb-3 "  >
-                        <div class="col p-4"  style="background:#FEFBEC; position: relative; border-radius: 20px;">
-                            <i class="bi bi-currency-dollar fs-1"  style="color: #00C1FE ;position:relative;background:#FEFBEC ; border:solid #00C1FE;"></i>
-                          <a href="indexpay.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Payments</p></a>
-                            <p class="d-flex justify-content-lg-end fw-bolder fs-2 px-4 "> <span class="fs-4 ">556,000 DHS</span></p>
-                        </div>
-                    </div>
+                            <div class="col-lg-3 col-md-12 pb-3 "  >
+                                <div class="col p-4"  style="background:#FEFBEC; position: relative; border-radius: 20px;">
+                                    <i class="bi bi-currency-dollar fs-1"  style="color: #00C1FE ;position:relative;background:#FEFBEC ; border:solid #00C1FE;"></i>
+                                <a href="indexpay.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Payments</p></a>
+                                    <p class="d-flex justify-content-lg-end fw-bolder fs-2 px-4 "> <span class="fs-4 ">556,000 DHS</span></p>
+                                </div>
+                            </div>
 
-                    <div class="col-lg-3 col-md-12 pb-3" >
-                        <div class="col p-4"  style="background:linear-gradient(to right,#00C1FE,#FAFFC1); position: relative; border-radius: 20px;">
-                            <i class="bi bi-person fs-1"  style="color:white;background:#3dc9f3;position:relative;"></i>
-                            <a href="#"><p class="fw-normal fs-4 " style="color:#6C6C6C;">User</p>
-                            </a>
-                            <p class="d-flex justify-content-lg-end fw-bolder fs-2">243</p>
+                            <div class="col-lg-3 col-md-12 pb-3" >
+                                <div class="col p-4"  style="background:linear-gradient(to right,#00C1FE,#FAFFC1); position: relative; border-radius: 20px;">
+                                    <i class="bi bi-person fs-1"  style="color:white;background:#3dc9f3;position:relative;"></i>
+                                    <a href="#"><p class="fw-normal fs-4 " style="color:#6C6C6C;">User</p>
+                                    </a>
+                                    <p class="d-flex justify-content-lg-end fw-bolder fs-2">243</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+          
+                   
+                    </div>  
             </div>
         </div>
       </div>

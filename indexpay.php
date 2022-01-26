@@ -18,26 +18,10 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row flex-nowrap">
-        <?php 
-         include('sidebar.php');
-         
-         ?>
-          <div class="col ">
-            <div class="d-flex justify-content-between mt-3">
-                <div >
-                    <a href="indexstudent.php"><i class="far fa-arrow-alt-circle-left text-muted"></i></a>
-                </div>
-                <div class="d-flex justify-content-between align-items-center gap-3">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <div>
-                        <a href="#"><i class="far fa-bell text-muted"></i></a>
-                    </div>
-                </div>
-            </div>
-    <!-- *************************main de page*******************************     -->
+        <div class="row flex-nowrap"><!-- col1-->
+            <?php include('sidebar.php');?>
+            <div class="col "><!-- col2-->
+                <?php include 'navbar.php' ?>
                 <div class="d-flex justify-content-between mt-3   ">
                     <div >
                         <a href="indexstudent.php " class="fs-3 fw-bold me-3">Payment  List</a>
@@ -47,81 +31,85 @@
                         
                     </div>
                 </div>
+                <!-- table-->
                 <div class="table-responsive-md">
-                <table class="table table-hover mt-4 ">
-			<?php 
-    //tableau assausitif
-                $payment=array(
-                    array (
-                        'Name'=>'Karthi',
-                        'Payment Schedule'=>'First',
-                        'Bill Number'=>00012223,
-                        'Amount Paid'=>'DHS 100,000',
-                        'Balance amount'=>'DHS 500,000',
-                        'Date'=>'05-Jan, 2022 ',
-                        ),
-                    array (
-                        'Name'=>'Karthi',
-                        'Payment Schedule'=>'First',
-                        'Bill Number'=>00012223,
-                        'Amount Paid'=>'DHS 100,000',
-                        'Balance amount'=>'DHS 500,000',
-                        'Date'=>'05-Jan, 2022 ',
-                        ), 
-                    array (
-                        'Name'=>'Karthi',
-                        'Payment Schedule'=>'First',
-                        'Bill Number'=>00012223,
-                        'Amount Paid'=>'DHS 100,000',
-                        'Balance amount'=>'DHS 500,000',
-                        'Date'=>'05-Jan, 2022 ',
-                        ), 
-                    array (
-                        'Name'=>'Karthi',
-                        'Payment Schedule'=>'First',
-                        'Bill Number'=>00012223,
-                        'Amount Paid'=>'DHS 100,000',
-                        'Balance amount'=>'DHS 500,000',
-                        'Date'=>'05-Jan, 2022 ',
-                        ), 
-                    );
-
-                ?>
-                    <br>
-                <table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
-                    <tr class="bg-light">
-                        <td>Name</td>
-                        <td>Payment Schedule</td>
-                        <td>Bill Number</td>
-                        <td>Amount Paid</td>
-                        <td>Balance amount</td>
-                        <td>Date</td>
-                    </tr>
-                    <tbody style="height: 352px; text-align:center">
+               
                     <?php 
-                            foreach ($payment as $key => $p) {
-                    ?>
-                        <tr style=" border-bottom-width: 11px;" >
-                        <td><?php echo$p['Name'];?> </td>
-                        <td><?php echo$p['Payment Schedule']; ?></td>
-                        <td><?php echo$p['Bill Number']; ?></td>
-                        <td><?php echo$p['Amount Paid']; ?></td>
-                        <td><?php echo$p['Balance amount']; ?></td>
-                        <td><?php echo$p['Date']; ?></td>
-                    </tr>
-                    <?php } ?>
-                    </tbody>
+                       //tableau assausitif
+                        $payment=array(
+                            array (
+                                'Name'=>'Karthi',
+                                'Payment Schedule'=>'First',
+                                'Bill Number'=>00012223,
+                                'Amount Paid'=>'DHS 100,000',
+                                'Balance amount'=>'DHS 500,000',
+                                'Date'=>'05-Jan, 2022 ',
+                                ),
+                            array (
+                                'Name'=>'Karthi',
+                                'Payment Schedule'=>'First',
+                                'Bill Number'=>00012223,
+                                'Amount Paid'=>'DHS 100,000',
+                                'Balance amount'=>'DHS 500,000',
+                                'Date'=>'05-Jan, 2022 ',
+                                ), 
+                            array (
+                                'Name'=>'Karthi',
+                                'Payment Schedule'=>'First',
+                                'Bill Number'=>00012223,
+                                'Amount Paid'=>'DHS 100,000',
+                                'Balance amount'=>'DHS 500,000',
+                                'Date'=>'05-Jan, 2022 ',
+                                ), 
+                            array (
+                                'Name'=>'Karthi',
+                                'Payment Schedule'=>'First',
+                                'Bill Number'=>00012223,
+                                'Amount Paid'=>'DHS 100,000',
+                                'Balance amount'=>'DHS 500,000',
+                                'Date'=>'05-Jan, 2022 ',
+                                ), 
+                            );
 
-                </table>
-                    </table>
+                        ?>
+                    
+                       <table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
+                            <tr class="bg-light">
+                                <td>Name</td>
+                                <td>Payment Schedule</td>
+                                <td>Bill Number</td>
+                                <td>Amount Paid</td>
+                                <td>Balance amount</td>
+                                <td>Date</td>
+                            </tr>
+                            <tbody style="height: 352px; text-align:center">
+                                <?php 
+                                        foreach ($payment as $key => $p) {
+                                ?>
+                                    <tr style=" border-bottom-width: 11px;" >
+                                    <td><?php echo$p['Name'];?> </td>
+                                    <td><?php echo$p['Payment Schedule']; ?></td>
+                                    <td><?php echo$p['Bill Number']; ?></td>
+                                    <td><?php echo$p['Amount Paid']; ?></td>
+                                    <td><?php echo$p['Balance amount']; ?></td>
+                                    <td><?php echo$p['Date']; ?></td>
+                                    <td class="text-primary align-middle">
+                                        <i class="far fa-eye text-info"></i>
+                                    </td>
+                                </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                   
 
 
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 
 </html>

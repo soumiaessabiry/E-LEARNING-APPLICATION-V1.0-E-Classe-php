@@ -10,22 +10,22 @@
                               </div>
                               <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start d-flex justify-content-center me-2 mb-md-0 " id="menu" >
                               <li class="nav-item fs-5 mt-3" >
-                                  <a href="index.html" class="nav-link align-middle px-4">
+                                  <a href="index.php" class="nav-link align-middle px-4">
                                       <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
                                   </a>
                               </li>
                               <li class="nav-item fs-5 mt-3" >
-                                  <a href="indexstudent.html" class="nav-link align-middle px-4">
+                                  <a href="indexstudent.php" class="nav-link align-middle px-4">
                                       <i class="bi bi-bookmark"></i><span class="ms-1 d-none d-sm-inline">Course</span>
                                   </a>
                               </li>
                               <li class="nav-item fs-5 mt-3" >
-                                  <a href="indexstudent.html" class="nav-link align-middle px-4 ">
+                                  <a href="indexstudent.php" class="nav-link align-middle px-4 ">
                                       <i class="bi bi-mortarboard"></i> <span class="ms-1 d-none d-sm-inline">Students</span>
                                   </a>
                               </li>
                               <li class="nav-item fs-5 mt-3" >
-                                  <a href="indexpay.html" class="nav-link align-middle px-4 ">
+                                  <a href="indexpay.php" class="nav-link align-middle px-4 ">
                                       <i class="bi bi-currency-dollar"></i> <span class="ms-1 d-none d-sm-inline">Payment</span>
                                   </a>
                               </li>
