@@ -18,26 +18,15 @@
 
         <body>
             <div class="container-fluid">
-                <div class="row flex-nowrap">
-                   <?php
-				 include('sidebar.php');  
-				 
-				 ?>
-                        <!-- ******************************** search******************************************* -->
-					<div class="col "  >
-						<div class="d-flex justify-content-between mt-3   ">
-							<div class="">
-								<a href="indexdach.php"><i class="far fa-arrow-alt-circle-left text-muted"></i></a>
-							</div>
-							<div class="d-flex justify-content-between align-items-center gap-3">
-									<form class="d-flex">
-										<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-									</form>
-								<div>
-									<a href="#/"><i class="far fa-bell text-muted"></i></a>
-								</div>
-							</div>
-						</div>
+               
+					<?php
+					include('sidebar.php');  
+					
+					?>
+				
+                  		<!-- ******************************** search******************************************* -->
+					<div class=" col"  >
+						<?php include 'navbar.php' ?>
 						<div class="d-flex justify-content-between mt-3   ">
 							<div class="">
 								<a href="indexstudent.php " class="fs-3 fw-bold me-3">Students List</a>
@@ -46,110 +35,108 @@
 								<i class="bi bi-chevron-expand fs-2 fw-bold" style="color:#00C1FE;"></i>
 								<div>
 								<form class="d-flex">
-									<button type="button" class="btn  btn-lg" style="background:#00C1FE ;">ADD NEW STUDENT</button>									</form>
+									<button type="button" class="btn" style="background:#00C1FE ;">ADD NEW STUDENT</button>									</form>
 								</div>
 							</div>
 						</div>
 					   <!-- ******************************** table******************************************** -->
-					 <div class="table-responsive-md ">
-					<table class="table table-hover mt-4 ">
-				<?php 
-					$student=array(
-						array (
-							'Name'=>'username',
-							'Email'=>'user@email.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							),
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						
-						array (
-							'Name'=>'username',
-							'Email'=>'karthi@gmmail.com',
-							'Phone'=>7305477760,
-							'Enroll number'=>1234567305477760,
-							'Date of admission'=>'08-Dec, 2021',
-							), 
-						);
+					 <div class="table-responsive-sm">
+						<?php 
+							$student=array(
+								array (
+									'Name'=>'username',
+									'Email'=>'user@email.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									),
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								
+								array (
+									'Name'=>'username',
+									'Email'=>'karthi@gmmail.com',
+									'Phone'=>7305477760,
+									'Enroll number'=>1234567305477760,
+									'Date of admission'=>'08-Dec, 2021',
+									), 
+								);
 
-					?>
-						<br>
-					<table  width="100%" style="height: 352px; text-align:center" class="table table-hover  bg-light " >
-						<tr class="bg-light">
-							<td>Name</td>
-							<td>Email</td>
-							<td> Phone</td>
-							<td>Enroll number</td>
-							<td>Date of admission</td>
-						</tr>
+							?>
+						
+					   <table  width="100%" style="text-align:center">
+						
 						<tbody style="height: 352px; text-align:center">
 						<?php 
 								foreach ($student as $key => $p) {
 						?>
 							<tr style=" border-bottom-width: 11px;" >
-							<td><?php echo$p['Name'];?> </td>
+							<td><?php echo $p['Name'];?> </td>
 							<td><?php echo$p['Email']; ?></td>
 							<td><?php echo$p['Phone']; ?></td>
 							<td><?php echo$p['Enroll number']; ?></td>
 							<td><?php echo$p['Date of admission']; ?></td>
+							<td class="text-primary align-middle">
+								<i class="fas fa-pen pe-3"></i>
+								<i class="fas fa-trash"></i>
+							</td>
 						</tr>
 						<?php } ?>
 						</tbody>
 
-					</table>
-						</table>
+					  </table>
 							
-					  </div>
-					</div>	
-                            
+					 </div>	
+					</div> 
+				</div> 
+			</div>
+			  
                 
 				</div>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         </body>
-
+		</html>
        
 		
