@@ -18,10 +18,8 @@
         </head>
         <body>
             <div class="container-fluid">
-               
-					<?php include('sidebar.php'); ?>
-				
-                  		<!-- ******************************** search******************************************* -->
+				<?php include('sidebar.php'); ?>
+					<!-- ******************************** search******************************************* -->
 					<div class=" col"  >
 						<?php include 'navbar.php' ?>
 						<div class="d-flex justify-content-between mt-3   ">
@@ -102,24 +100,35 @@
 							?>
 						
 					   <table  width="100%" style="text-align:center "  class="table table-hover">
-						
+						<thead>
+						<tr class="bg-light mt-5" style="color: #ACACAC;  height: 70px;">
+									<th scope="col"></th>
+									<th scope="col"  class="align-middle">Name</th>
+									<th scope="col" class="align-middle">Email</th>
+									<th scope="col" class="align-middle">Phone</th>
+									<th scope="col" class="align-middle">Enroll number</th>
+									<th scope="col" class="align-middle">Date of admission</th>
+									<th scope="col" class="align-middle"></th>
+								</tr>
+						</thead>
 						<tbody style="height: 352px; text-align:center">
 						<?php 
 								foreach ($student as $key => $p) {
 						?>
 							<tr style=" border-bottom-width: 11px;" >
-							<th scope="row">
-								<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-							</th>
-							<td><?php echo $p['Name'];?> </td>
-							<td><?php echo$p['Email']; ?></td>
-							<td><?php echo$p['Phone']; ?></td>
-							<td><?php echo$p['Enroll number']; ?></td>
-							<td><?php echo$p['Date of admission']; ?></td>
-							<td class="text-primary align-middle">
-								<i class="fas fa-pen pe-3"></i>
-								<i class="fas fa-trash"></i>
-							</td>
+							
+								<th scope="row">
+									<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
+								</th>
+								<td><?php echo $p['Name'];?> </td>
+								<td><?php echo $p['Email']; ?></td>
+								<td><?php echo $p['Phone']; ?></td>
+								<td><?php echo $p['Enroll number']; ?></td>
+								<td><?php echo $p['Date of admission']; ?></td>
+								<td class="text-primary align-middle">
+									<i class="fas fa-pen pe-3"></i>
+									<i class="fas fa-trash"></i>
+								</td>
 						</tr>
 						<?php } ?>
 						</tbody>

@@ -17,5 +17,5 @@ a:hover{
   background: #00C1FE !important;
 }
 body{
-  overflow: hidden !important;
+  overflow-y:visible !important;
 }

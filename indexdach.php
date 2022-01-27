@@ -21,14 +21,11 @@
         <div class="row flex-nowrap">
                <?php include('sidebar.php'); ?> 
             <div class="col ">
-                  <?php include 'navbar.php' ?>
-                
-              
                   <!-- ******************************* main de page******************************** -->
-
                     <div class="row  my-3">
+                         <?php include 'navbar.php' ?>
                         <div class="row  p-5 " style="position: relative;">
-                            <div class="col-lg-3 col-md-12 pb-3" >
+                            <div class="col-lg-3 col-md-6 pb-3" >
                                 <div class="col p-4"  style="background:#F0F9FF; position: relative; border-radius: 20px;; ">
                                     <i class="bi bi-mortarboard fs-1"  style="color: #74C1ED ;position:relative;background:#F0F9FF ;"></i>
                                 <a href="indexstudent.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Students</p></a> 
@@ -36,7 +33,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-12 pb-3" >
+                            <div class="col-lg-3 col-md-6 pb-3" >
                                 <div class="col p-4"  style="background:#FEF6FB; position: relative; border-radius: 20px;">
                                     <i class="bi bi-bookmark fs-1"  style="color:#EE95C5 ;position:relative;background:#FEF6FB  30px; " ></i>
                                 <a href="#"> <p class="fw-normal fs-4 " style="color:#6C6C6C;">Course</p></a>
@@ -44,7 +41,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-12 pb-3 "  >
+                            <div class="col-lg-3 col-md-6 pb-3 "  >
                                 <div class="col p-4"  style="background:#FEFBEC; position: relative; border-radius: 20px;">
                                     <i class="bi bi-currency-dollar fs-1"  style="color: #00C1FE ;position:relative;background:#FEFBEC ; border:solid #00C1FE;"></i>
                                 <a href="indexpay.php"><p class="fw-normal fs-4 " style="color:#6C6C6C;">Payments</p></a>
@@ -52,7 +49,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-12 pb-3" >
+                            <div class="col-lg-3 col-md-6 pb-3" >
                                 <div class="col p-4"  style="background:linear-gradient(to right,#00C1FE,#FAFFC1); position: relative; border-radius: 20px;">
                                     <i class="bi bi-person fs-1"  style="color:white;background:#3dc9f3;position:relative;"></i>
                                     <a href="#"><p class="fw-normal fs-4 " style="color:#6C6C6C;">User</p>
@@ -61,15 +58,14 @@
                                 </div>
                             </div>
                         </div>
-          
-                   
                     </div>  
             </div>
         </div>
       </div>
-      
+  
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
