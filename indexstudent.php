@@ -36,104 +36,86 @@
 						</div>
 					   <!-- ******************************** table******************************************** -->
 					 <div class="table-responsive-sm">
-						<?php 
-							$student=array(
-								array (
-									'Name'=>'username',
-									'Email'=>'user@email.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									),
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								
-								array (
-									'Name'=>'username',
-									'Email'=>'karthi@gmmail.com',
-									'Phone'=>7305477760,
-									'Enroll number'=>1234567305477760,
-									'Date of admission'=>'08-Dec, 2021',
-									), 
-								);
-
-							?>
-						
-					   <table  width="100%" style="text-align:center "  class="table table-hover">
-						<thead>
-						<tr class="bg-light mt-5" style="color: #ACACAC;  height: 70px;">
-									<th scope="col"></th>
-									<th scope="col"  class="align-middle">Name</th>
-									<th scope="col" class="align-middle">Email</th>
-									<th scope="col" class="align-middle">Phone</th>
-									<th scope="col" class="align-middle">Enroll number</th>
-									<th scope="col" class="align-middle">Date of admission</th>
-									<th scope="col" class="align-middle"></th>
-								</tr>
-						</thead>
-						<tbody style="height: 352px; text-align:center">
-						<?php 
-								foreach ($student as $key => $p) {
-						?>
-							<tr style=" border-bottom-width: 11px;" >
-							
-								<th scope="row">
-									<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
-								</th>
-								<td><?php echo $p['Name'];?> </td>
-								<td><?php echo $p['Email']; ?></td>
-								<td><?php echo $p['Phone']; ?></td>
-								<td><?php echo $p['Enroll number']; ?></td>
-								<td><?php echo $p['Date of admission']; ?></td>
-								<td class="text-primary align-middle">
-									<i class="fas fa-pen pe-3"></i>
-									<i class="fas fa-trash"></i>
-								</td>
-						</tr>
-						<?php } ?>
-						</tbody>
-
-					  </table>
+					 <?php
+											$student=array(
+												array (
+													'Name'=>'username',
+													'Email'=>'user@email.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													),
+												array (
+													'Name'=>'username',
+													'Email'=>'karthi@gmmail.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													), 
+												array (
+													'Name'=>'username',
+												'Email'=>'karthi@gmmail.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													), 
+												array (
+													'Name'=>'username',
+													'Email'=>'karthi@gmmail.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													), 
+												array (
+													'Name'=>'username',
+												'Email'=>'karthi@gmmail.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													), 
+													array (
+													'Name'=>'username',
+													'Phone'=>7305477760,
+													'Email'=>'karthi@gmmail.com',
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+											), 
+											array (
+												'Name'=>'username',
+											'Email'=>'karthi@gmmail.com',
+											'Phone'=>7305477760,
+											'Enroll number'=>1234567305477760,
+											'Date of admission'=>'08-Dec, 2021',
+												), 
+											
+											array (
+													'Name'=>'username',
+													'Email'=>'karthi@gmmail.com',
+													'Phone'=>7305477760,
+													'Enroll number'=>1234567305477760,
+													'Date of admission'=>'08-Dec, 2021',
+													), 
+												);
+											foreach ($student as $key => $p) 
+											echo'
+													<tr style=" border-bottom-width: 11px;" >
+													
+														<td scope="row">
+															<img src="photo2.jpg" alt="Pro-img" width="65" height="55">
+														</td>
+														<td>'. $p['Name'].'</td>
+														<td>'. $p['Email'].'</td>
+														<td>'. $p['Phone'].'</td>
+														<td>'. $p['Enroll number'].'</td>
+														<td>'. $p['Date of admission'].'</td>
+														<td class="text-primary align-middle">
+															<i class="fas fa-pen pe-3"></i>
+															<i class="fas fa-trash"></i>
+														</td>
+												</tr>'		
+									?>	
+							</tbody>
+					    </table>
 							
 					 </div>	
 					</div> 
